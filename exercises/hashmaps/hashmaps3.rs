@@ -40,6 +40,7 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         scores.insert(team_1_name, Team {goals_scored: team_1_score, goals_conceded: team_2_score});
         scores.insert(team_2_name, Team {goals_scored: team_2_score, goals_conceded: team_1_score});
     }
+    
     scores.insert(String::from("England"), Team {goals_scored: 5, goals_conceded: 4});
 
     scores
